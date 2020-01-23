@@ -28,6 +28,28 @@
 		</div>
 	</div>
 
+	<div class="container">
+		<a href="~/Home/Action1">Action 1</a>
+		|
+		<a href="~/Home/Action2">Action 2</a>
+		|
+		<a href="~/Home/Action3">Action 3</a>
+		|
+
+		@{
+			if (Request.IsAuthenticated)
+			{
+				<a href="~/Account/Logout">Logout</a>
+
+				<b>| Welcome @(HttpContext.Current.User.Identity.Name)</b>
+			}
+			else
+			{
+				<a href="~/Account/Login">Login</a>
+			}
+		}
+	</div>
+
 	<div class="container body-content">
 		@RenderBody()
 		<hr />

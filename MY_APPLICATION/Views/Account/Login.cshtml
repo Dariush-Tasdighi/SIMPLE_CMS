@@ -1,0 +1,29 @@
+﻿@model ViewModels.Account.LoginViewModel
+
+@{
+	string title =
+		Resources.PageTitles.Login;
+
+	ViewBag.Title = title;
+}
+
+@Html.DtxHeader(title)
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+
+	<div class="form-horizontal">
+		@Html.DtxValidationSummary()
+
+		@Html.DtxLabelAndEditorFor(model => model.Username)
+
+		@Html.DtxLabelAndEditorFor(model => model.Password)
+
+		@*@Html.DtxCaptcha(labelColumn: labelColumn)*@
+
+		@Html.DtxSubmitButton(submitButtonCaption: Resources.Buttons.Login)
+	</div>
+
+	@Html.DtxHorizontalLine()
+}

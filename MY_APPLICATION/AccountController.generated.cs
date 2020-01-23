@@ -25,10 +25,10 @@ using System.Web.Routing;
 using T4MVC;
 namespace MY_APPLICATION.Controllers
 {
-    public partial class HomeController
+    public partial class AccountController
     {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected HomeController(Dummy d) { }
+        protected AccountController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         protected RedirectToRouteResult RedirectToAction(ActionResult result)
@@ -58,13 +58,13 @@ namespace MY_APPLICATION.Controllers
 
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public HomeController Actions { get { return MVC.Home; } }
+        public AccountController Actions { get { return MVC.Account; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "";
         [GeneratedCode("T4MVC", "2.0")]
-        public readonly string Name = "Home";
+        public readonly string Name = "Account";
         [GeneratedCode("T4MVC", "2.0")]
-        public const string NameConst = "Home";
+        public const string NameConst = "Account";
         [GeneratedCode("T4MVC", "2.0")]
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -72,22 +72,36 @@ namespace MY_APPLICATION.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass
         {
-            public readonly string Index = "Index";
-            public readonly string Action1 = "Action1";
-            public readonly string Action2 = "Action2";
-            public readonly string Action3 = "Action3";
+            public readonly string Login = "Login";
+            public readonly string Logout = "Logout";
+            public readonly string Register = "Register";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNameConstants
         {
-            public const string Index = "Index";
-            public const string Action1 = "Action1";
-            public const string Action2 = "Action2";
-            public const string Action3 = "Action3";
+            public const string Login = "Login";
+            public const string Logout = "Logout";
+            public const string Register = "Register";
         }
 
 
+        static readonly ActionParamsClass_Login s_params_Login = new ActionParamsClass_Login();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Login LoginParams { get { return s_params_Login; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Login
+        {
+            public readonly string viewModel = "viewModel";
+        }
+        static readonly ActionParamsClass_Register s_params_Register = new ActionParamsClass_Register();
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public ActionParamsClass_Register RegisterParams { get { return s_params_Register; } }
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public class ActionParamsClass_Register
+        {
+            public readonly string viewModel = "viewModel";
+        }
         static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public ViewsClass Views { get { return s_views; } }
@@ -98,64 +112,71 @@ namespace MY_APPLICATION.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
-                public readonly string Action1 = "Action1";
-                public readonly string Action2 = "Action2";
-                public readonly string Action3 = "Action3";
-                public readonly string Index = "Index";
+                public readonly string Login = "Login";
             }
-            public readonly string Action1 = "~/Views/Home/Action1.cshtml";
-            public readonly string Action2 = "~/Views/Home/Action2.cshtml";
-            public readonly string Action3 = "~/Views/Home/Action3.cshtml";
-            public readonly string Index = "~/Views/Home/Index.cshtml";
+            public readonly string Login = "~/Views/Account/Login.cshtml";
         }
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public partial class T4MVC_HomeController : MY_APPLICATION.Controllers.HomeController
+    public partial class T4MVC_AccountController : MY_APPLICATION.Controllers.AccountController
     {
-        public T4MVC_HomeController() : base(Dummy.Instance) { }
+        public T4MVC_AccountController() : base(Dummy.Instance) { }
 
         [NonAction]
-        partial void IndexOverride(T4MVC_System_Web_Mvc_ViewResult callInfo);
+        partial void LoginOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
         [NonAction]
-        public override System.Web.Mvc.ViewResult Index()
+        public override System.Web.Mvc.ActionResult Login()
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ViewResult(Area, Name, ActionNames.Index);
-            IndexOverride(callInfo);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Login);
+            LoginOverride(callInfo);
             return callInfo;
         }
 
         [NonAction]
-        partial void Action1Override(T4MVC_System_Web_Mvc_ViewResult callInfo);
+        partial void LoginOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, ViewModels.Account.LoginViewModel viewModel);
 
         [NonAction]
-        public override System.Web.Mvc.ViewResult Action1()
+        public override System.Web.Mvc.ActionResult Login(ViewModels.Account.LoginViewModel viewModel)
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ViewResult(Area, Name, ActionNames.Action1);
-            Action1Override(callInfo);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Login);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "viewModel", viewModel);
+            LoginOverride(callInfo, viewModel);
             return callInfo;
         }
 
         [NonAction]
-        partial void Action2Override(T4MVC_System_Web_Mvc_ViewResult callInfo);
+        partial void LogoutOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
         [NonAction]
-        public override System.Web.Mvc.ViewResult Action2()
+        public override System.Web.Mvc.ActionResult Logout()
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ViewResult(Area, Name, ActionNames.Action2);
-            Action2Override(callInfo);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Logout);
+            LogoutOverride(callInfo);
             return callInfo;
         }
 
         [NonAction]
-        partial void Action3Override(T4MVC_System_Web_Mvc_ViewResult callInfo);
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
         [NonAction]
-        public override System.Web.Mvc.ViewResult Action3()
+        public override System.Web.Mvc.ActionResult Register()
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ViewResult(Area, Name, ActionNames.Action3);
-            Action3Override(callInfo);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
+            RegisterOverride(callInfo);
+            return callInfo;
+        }
+
+        [NonAction]
+        partial void RegisterOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, ViewModels.Account.RegisterViewModel viewModel);
+
+        [NonAction]
+        public override System.Web.Mvc.ActionResult Register(ViewModels.Account.RegisterViewModel viewModel)
+        {
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Register);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "viewModel", viewModel);
+            RegisterOverride(callInfo, viewModel);
             return callInfo;
         }
 

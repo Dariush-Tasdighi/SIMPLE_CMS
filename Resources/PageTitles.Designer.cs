@@ -22,14 +22,14 @@ namespace Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Messages {
+    public class PageTitles {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Messages() {
+        internal PageTitles() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.PageTitles", typeof(PageTitles).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,11 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You did not specify {0}!.
+        ///   Looks up a localized string similar to Login.
         /// </summary>
-        public static string RequiredValidationErrorMessage {
+        public static string Login {
             get {
-                return ResourceManager.GetString("RequiredValidationErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to You Can Select an Item.
-        /// </summary>
-        public static string YouCanSelectAnItem {
-            get {
-                return ResourceManager.GetString("YouCanSelectAnItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to You Should Select an Item.
-        /// </summary>
-        public static string YouShouldSelectAnItem {
-            get {
-                return ResourceManager.GetString("YouShouldSelectAnItem", resourceCulture);
+                return ResourceManager.GetString("Login", resourceCulture);
             }
         }
     }

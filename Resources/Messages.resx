@@ -120,4 +120,10 @@
   <data name="RequiredValidationErrorMessage" xml:space="preserve">
     <value>You did not specify {0}!</value>
   </data>
+  <data name="YouCanSelectAnItem" xml:space="preserve">
+    <value>You Can Select an Item</value>
+  </data>
+  <data name="YouShouldSelectAnItem" xml:space="preserve">
+    <value>You Should Select an Item</value>
+  </data>
 </root>

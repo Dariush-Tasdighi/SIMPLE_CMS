@@ -61,6 +61,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Content.
+        /// </summary>
+        public static string Content {
+            get {
+                return ResourceManager.GetString("Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currency.
+        /// </summary>
+        public static string Currency {
+            get {
+                return ResourceManager.GetString("Currency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         public static string Description {
@@ -97,6 +115,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default.
+        /// </summary>
+        public static string IsDefault {
+            get {
+                return ResourceManager.GetString("IsDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         public static string Name {
@@ -106,11 +133,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string Page {
+            get {
+                return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Password {
             get {
                 return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Percent.
+        /// </summary>
+        public static string Percent {
+            get {
+                return ResourceManager.GetString("Percent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security Code.
+        /// </summary>
+        public static string SecurityCode {
+            get {
+                return ResourceManager.GetString("SecurityCode", resourceCulture);
             }
         }
         

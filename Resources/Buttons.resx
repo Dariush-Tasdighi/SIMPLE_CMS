@@ -117,46 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Content" xml:space="preserve">
-    <value>Content</value>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
   </data>
-  <data name="Currency" xml:space="preserve">
-    <value>Currency</value>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="Description" xml:space="preserve">
-    <value>Description</value>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
   </data>
-  <data name="Id" xml:space="preserve">
-    <value>Id</value>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
   </data>
-  <data name="InsertDateTime" xml:space="preserve">
-    <value>Insert Time</value>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
   </data>
-  <data name="IsActive" xml:space="preserve">
-    <value>Active</value>
-  </data>
-  <data name="IsDefault" xml:space="preserve">
-    <value>Default</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="Page" xml:space="preserve">
-    <value>Page</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="Percent" xml:space="preserve">
-    <value>Percent</value>
-  </data>
-  <data name="SecurityCode" xml:space="preserve">
-    <value>Security Code</value>
-  </data>
-  <data name="UpdateDateTime" xml:space="preserve">
-    <value>Update Time</value>
-  </data>
-  <data name="Username" xml:space="preserve">
-    <value>Username</value>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
   </data>
 </root>
