@@ -20,7 +20,7 @@
 
 		// **********
 		/// <summary>
-		/// برای اعمال درختواره بودن دسته بندی2
+		/// برای اعمال درختواره بودن دسته بندی
 		/// </summary>
 		[System.ComponentModel.DataAnnotations.Schema.Index
 			(name: "IX_ParentId_Title", 1, IsUnique = true)]
