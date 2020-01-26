@@ -141,14 +141,23 @@
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="Ordering" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
   <data name="Page" xml:space="preserve">
     <value>Page</value>
+  </data>
+  <data name="ParentId" xml:space="preserve">
+    <value>ParentId</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="Percent" xml:space="preserve">
     <value>Percent</value>
+  </data>
+  <data name="PostCategoryTitle" xml:space="preserve">
+    <value>Post Category Title</value>
   </data>
   <data name="SecurityCode" xml:space="preserve">
     <value>Security Code</value>
