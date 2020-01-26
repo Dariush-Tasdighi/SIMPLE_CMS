@@ -133,11 +133,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ordering.
+        /// </summary>
+        public static string Ordering {
+            get {
+                return ResourceManager.GetString("Ordering", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Page.
         /// </summary>
         public static string Page {
             get {
                 return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ParentId.
+        /// </summary>
+        public static string ParentId {
+            get {
+                return ResourceManager.GetString("ParentId", resourceCulture);
             }
         }
         
@@ -156,6 +174,15 @@ namespace Resources {
         public static string Percent {
             get {
                 return ResourceManager.GetString("Percent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Post Category Title.
+        /// </summary>
+        public static string PostCategoryTitle {
+            get {
+                return ResourceManager.GetString("PostCategoryTitle", resourceCulture);
             }
         }
         
