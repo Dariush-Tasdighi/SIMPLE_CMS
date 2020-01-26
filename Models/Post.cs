@@ -2,10 +2,10 @@
 
 namespace Models
 {
-	public class Post: Base.Entity
+	public class Post : Base.Entity
 	{
 
-		public Post():base()
+		public Post() : base()
 		{
 		}
 
