@@ -3,6 +3,16 @@
 	public class PostCategory : Base.Entity
 	{
 
+		#region Configuration
+		internal class Configuration :
+			System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<PostCategory>
+		{
+			public Configuration() : base()
+			{
+
+			}
+		}
+		#endregion/Configuration
 
 		public PostCategory() : base()
 		{
@@ -83,7 +93,9 @@
 		// **********
 		/// <summary>
 		/// Posts برای اعمال کلید خارجی در
+		/// The posts related to a specific category.
+		/// One to many relation between PostCategory and Post from Object-Oriented view.
 		/// </summary>
-		//public virtual System.Collections.Generic.IList<Post> Posts{ get; set; }
+		public virtual System.Collections.Generic.IList<Post> Posts{ get; set; }
 	}
 }
