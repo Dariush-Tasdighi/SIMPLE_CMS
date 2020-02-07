@@ -115,11 +115,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Commenting Enabled.
+        /// </summary>
+        public static string IsCommentingEnabled {
+            get {
+                return ResourceManager.GetString("IsCommentingEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Default.
         /// </summary>
         public static string IsDefault {
             get {
                 return ResourceManager.GetString("IsDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Featured.
+        /// </summary>
+        public static string IsFeatured {
+            get {
+                return ResourceManager.GetString("IsFeatured", resourceCulture);
             }
         }
         

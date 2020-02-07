@@ -135,8 +135,14 @@
   <data name="IsActive" xml:space="preserve">
     <value>Active</value>
   </data>
+  <data name="IsCommentingEnabled" xml:space="preserve">
+    <value>Commenting Enabled</value>
+  </data>
   <data name="IsDefault" xml:space="preserve">
     <value>Default</value>
+  </data>
+  <data name="IsFeatured" xml:space="preserve">
+    <value>Featured</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>

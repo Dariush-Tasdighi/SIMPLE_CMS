@@ -10,10 +10,10 @@ namespace Models
 		/// Regulate One to many relation between Users and Posts
 		/// With Fluent Api Approach
 		/// </summary>
-		internal class Configuration:
+		internal class Configuration :
 			System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<Post>
 		{
-			public Configuration():base()
+			public Configuration() : base()
 			{
 				HasRequired(current => current.WriterUser)
 					.WithMany(user => user.WrittenPosts)
@@ -46,6 +46,9 @@ namespace Models
 			(ResourceType = typeof(Resources.DataDictionary),
 			Name = nameof(Resources.DataDictionary.Description))]
 
+		[System.ComponentModel.DataAnnotations.StringLength
+			(maximumLength: 65)]
+
 		public string Description { get; set; }
 		// **********
 
@@ -58,12 +61,12 @@ namespace Models
 			(ResourceType = typeof(Resources.DataDictionary),
 			Name = nameof(Resources.DataDictionary.Password))]
 
+		[System.ComponentModel.DataAnnotations.Required
+			(AllowEmptyStrings = false)]
+
 		public string Password { get; set; }
 		// **********
 
-
-		// **********
-		// **********
 		// **********
 		/// <summary>
 		/// User who creates or writes the post (One to many relation between Users and Posts from Object-Oriented View).
@@ -105,7 +108,28 @@ namespace Models
 		/// </summary>
 		public System.Guid? PostCategoryId { get; set; }
 		// **********
+
 		// **********
+		/// <summary>
+		/// ویژه بودن پست
+		/// </summary>
+		[System.ComponentModel.DataAnnotations.Display
+			(ResourceType = typeof(Resources.DataDictionary),
+			Name = nameof(Resources.DataDictionary.IsFeatured))]
+
+		public bool IsFeatured { get; set; }
 		// **********
+
+		// **********
+		/// <summary>
+		/// فعال بودن اظهار نظر پست
+		/// </summary>
+		[System.ComponentModel.DataAnnotations.Display
+			(ResourceType = typeof(Resources.DataDictionary),
+			Name = nameof(Resources.DataDictionary.IsCommentingEnabled))]
+
+		public bool IsCommentingEnabled { get; set; }
+		// **********
+
 	}
 }
