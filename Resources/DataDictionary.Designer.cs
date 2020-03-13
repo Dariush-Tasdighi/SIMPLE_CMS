@@ -61,11 +61,74 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attachment Extension.
+        /// </summary>
+        public static string AttachmentExtension {
+            get {
+                return ResourceManager.GetString("AttachmentExtension", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attachment Length.
+        /// </summary>
+        public static string AttachmentLength {
+            get {
+                return ResourceManager.GetString("AttachmentLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Author.
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Body.
+        /// </summary>
+        public static string Body {
+            get {
+                return ResourceManager.GetString("Body", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classification.
+        /// </summary>
+        public static string Classification {
+            get {
+                return ResourceManager.GetString("Classification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Content.
         /// </summary>
         public static string Content {
             get {
                 return ResourceManager.GetString("Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copyright.
+        /// </summary>
+        public static string Copyright {
+            get {
+                return ResourceManager.GetString("Copyright", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creator User Id.
+        /// </summary>
+        public static string CreatorUserId {
+            get {
+                return ResourceManager.GetString("CreatorUserId", resourceCulture);
             }
         }
         
@@ -79,11 +142,74 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete Date Time.
+        /// </summary>
+        public static string DeleteDateTime {
+            get {
+                return ResourceManager.GetString("DeleteDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         public static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display Creator User.
+        /// </summary>
+        public static string DisplayCreatorUser {
+            get {
+                return ResourceManager.GetString("DisplayCreatorUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Does Search Engines Follow It.
+        /// </summary>
+        public static string DoesSearchEnginesFollowIt {
+            get {
+                return ResourceManager.GetString("DoesSearchEnginesFollowIt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Does Search Engines Index It.
+        /// </summary>
+        public static string DoesSearchEnginesIndexIt {
+            get {
+                return ResourceManager.GetString("DoesSearchEnginesIndexIt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download Count.
+        /// </summary>
+        public static string DownloadCount {
+            get {
+                return ResourceManager.GetString("DownloadCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attachment.
+        /// </summary>
+        public static string HasAttachment {
+            get {
+                return ResourceManager.GetString("HasAttachment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hits.
+        /// </summary>
+        public static string Hits {
+            get {
+                return ResourceManager.GetString("Hits", resourceCulture);
             }
         }
         
@@ -97,11 +223,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ImageUrl.
+        /// </summary>
+        public static string ImageUrl {
+            get {
+                return ResourceManager.GetString("ImageUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insert Time.
         /// </summary>
         public static string InsertDateTime {
             get {
                 return ResourceManager.GetString("InsertDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Introduction.
+        /// </summary>
+        public static string Introduction {
+            get {
+                return ResourceManager.GetString("Introduction", resourceCulture);
             }
         }
         
@@ -133,11 +277,56 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deleted.
+        /// </summary>
+        public static string IsDeleted {
+            get {
+                return ResourceManager.GetString("IsDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draft.
+        /// </summary>
+        public static string IsDraft {
+            get {
+                return ResourceManager.GetString("IsDraft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Featured.
         /// </summary>
         public static string IsFeatured {
             get {
                 return ResourceManager.GetString("IsFeatured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System.
+        /// </summary>
+        public static string IsSystem {
+            get {
+                return ResourceManager.GetString("IsSystem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keywords.
+        /// </summary>
+        public static string Keywords {
+            get {
+                return ResourceManager.GetString("Keywords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LayoutId.
+        /// </summary>
+        public static string LayoutId {
+            get {
+                return ResourceManager.GetString("LayoutId", resourceCulture);
             }
         }
         
@@ -205,11 +394,56 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Post TypeId.
+        /// </summary>
+        public static string PostTypeId {
+            get {
+                return ResourceManager.GetString("PostTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publish Finish Date Time.
+        /// </summary>
+        public static string PublishFinishDateTime {
+            get {
+                return ResourceManager.GetString("PublishFinishDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publish Start Date Time.
+        /// </summary>
+        public static string PublishStartDateTime {
+            get {
+                return ResourceManager.GetString("PublishStartDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remover User Id.
+        /// </summary>
+        public static string RemoverUserId {
+            get {
+                return ResourceManager.GetString("RemoverUserId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Security Code.
         /// </summary>
         public static string SecurityCode {
             get {
                 return ResourceManager.GetString("SecurityCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Titel.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
         
@@ -228,6 +462,15 @@ namespace Resources {
         public static string Username {
             get {
                 return ResourceManager.GetString("Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verify Date Time.
+        /// </summary>
+        public static string VerifyDateTime {
+            get {
+                return ResourceManager.GetString("VerifyDateTime", resourceCulture);
             }
         }
     }
